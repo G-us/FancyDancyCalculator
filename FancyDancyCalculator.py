@@ -46,6 +46,7 @@ while True:
 
     print("it work?")
     print("it maybe not work?")
+    print("okay i'm pretty sure it works")
     parsedinput = wholeinput.split(" ")
     print(parsedinput)
 
