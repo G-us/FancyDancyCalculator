@@ -77,7 +77,7 @@ while True:
     def exp(input1, input2):
         print("exping")
         output = math.pow(int(input1), int(input2))
-        print(pyfiglet.figlet_format(wholeinput + " is " + str(output)))
+        print(pyfiglet.figlet_format(str(input1) + " to the power of " + str(input2) + " is " + str(output)))
 
     def squarert(input1):
         print("sqrting")
