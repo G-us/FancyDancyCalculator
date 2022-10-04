@@ -82,7 +82,7 @@ while True:
     def squarert(input1):
         print("sqrting")
         output = math.sqrt(int(input1))
-        print(pyfiglet.figlet_format(wholeinput + " is " + str(output)))
+        print(pyfiglet.figlet_format("The sqrt of " + input1) + " is " + output)
 
     if mathop == "/":
         print("division selected")
