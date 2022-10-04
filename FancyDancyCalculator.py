@@ -11,33 +11,33 @@ parsedinput = ""
 output = 0
 
 print('''
-,--.   ,--.         ,--.                                         ,--.           
-|  |   |  |  ,---.  |  |  ,---.  ,---.  ,--,--,--.  ,---.      ,-'  '-.  ,---.  
-|  |.'.|  | | .-. : |  | | .--' | .-. | |        | | .-. :     '-.  .-' | .-. | 
-|   ,'.   | \   --. |  | \ `--. ' '-' ' |  |  |  | \   --.       |  |   ' '-' ' 
-'--'   '--'  `----' `--'  `---'  `---'  `--`--`--'  `----'       `--'    `---'                                                                               
+,--.   ,--.         ,--.                                         ,--.
+|  |   |  |  ,---.  |  |  ,---.  ,---.  ,--,--,--.  ,---.      ,-'  '-.  ,---.
+|  |.'.|  | | .-. : |  | | .--' | .-. | |        | | .-. :     '-.  .-' | .-. |
+|   ,'.   | \   --. |  | \ `--. ' '-' ' |  |  |  | \   --.       |  |   ' '-' '
+'--'   '--'  `----' `--'  `---'  `---'  `--`--`--'  `----'       `--'    `---'
 ''')
 sleep(2)
 print('''
-                                                                                                  
-                                                                                                  
+
+
         CCCCCCCCCCCCC               AAA               LLLLLLLLLLL                    CCCCCCCCCCCCC
      CCC::::::::::::C              A:::A              L:::::::::L                 CCC::::::::::::C
    CC:::::::::::::::C             A:::::A             L:::::::::L               CC:::::::::::::::C
   C:::::CCCCCCCC::::C            A:::::::A            LL:::::::LL              C:::::CCCCCCCC::::C
  C:::::C       CCCCCC           A:::::::::A             L:::::L               C:::::C       CCCCCC
-C:::::C                        A:::::A:::::A            L:::::L              C:::::C              
-C:::::C                       A:::::A A:::::A           L:::::L              C:::::C              
-C:::::C                      A:::::A   A:::::A          L:::::L              C:::::C              
-C:::::C                     A:::::A     A:::::A         L:::::L              C:::::C              
-C:::::C                    A:::::AAAAAAAAA:::::A        L:::::L              C:::::C              
-C:::::C                   A:::::::::::::::::::::A       L:::::L              C:::::C              
+C:::::C                        A:::::A:::::A            L:::::L              C:::::C
+C:::::C                       A:::::A A:::::A           L:::::L              C:::::C
+C:::::C                      A:::::A   A:::::A          L:::::L              C:::::C
+C:::::C                     A:::::A     A:::::A         L:::::L              C:::::C
+C:::::C                    A:::::AAAAAAAAA:::::A        L:::::L              C:::::C
+C:::::C                   A:::::::::::::::::::::A       L:::::L              C:::::C
  C:::::C       CCCCCC    A:::::AAAAAAAAAAAAA:::::A      L:::::L         LLLLLLC:::::C       CCCCCC
   C:::::CCCCCCCC::::C   A:::::A             A:::::A   LL:::::::LLLLLLLLL:::::L C:::::CCCCCCCC::::C
    CC:::::::::::::::C  A:::::A               A:::::A  L::::::::::::::::::::::L  CC:::::::::::::::C
      CCC::::::::::::C A:::::A                 A:::::A L::::::::::::::::::::::L    CCC::::::::::::C
         CCCCCCCCCCCCCAAAAAAA                   AAAAAAALLLLLLLLLLLLLLLLLLLLLLLL       CCCCCCCCCCCCC
-                                                                                                                                                                                           
+
 ''')
 sleep(1)
 while True:
@@ -82,7 +82,7 @@ while True:
     def squarert(input1):
         print("sqrting")
         output = math.sqrt(int(input1))
-        print(pyfiglet.figlet_format("The sqrt of " + input1) + " is " + output)
+        print(pyfiglet.figlet_format("The sqrt of " + str(input1) + " is " + str(output)))
 
     if mathop == "/":
         print("division selected")
