@@ -44,6 +44,8 @@ while True:
     wholeinput = input("Enter your equation: ")
     print(wholeinput)
 
+    print("it work?")
+
     parsedinput = wholeinput.split(" ")
     print(parsedinput)
 
