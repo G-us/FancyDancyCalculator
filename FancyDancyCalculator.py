@@ -56,32 +56,32 @@ while True:
 
     def multiply(input1, input2):
         print("multiplying")
-        output = int(input1) * int(input2)
+        output = float(input1) * float(input2)
         print(pyfiglet.figlet_format(wholeinput + " is " + str(output)))
 
     def divide(input1, input2):
         print("dividing")
-        output = int(input1) / int(input2)
+        output = float(input1) / float(input2)
         print(pyfiglet.figlet_format(wholeinput + " is " + str(output)))
 
     def add(input1, input2):
         print("adding")
-        output = int(input1) + int(input2)
+        output = float(input1) + float(input2)
         print(pyfiglet.figlet_format(wholeinput + " is " + str(output)))
 
     def subtract(input1, input2):
         print("subtracting")
-        output = int(input1) - int(input2)
+        output = float(input1) - float(input2)
         print(pyfiglet.figlet_format(wholeinput + " is " + str(output)))
 
     def exp(input1, input2):
         print("exping")
-        output = math.pow(int(input1), int(input2))
+        output = math.pow(float(input1), float(input2))
         print(pyfiglet.figlet_format(str(input1) + " to the power of " + str(input2) + " is " + str(output)))
 
     def squarert(input1):
         print("sqrting")
-        output = math.sqrt(int(input1))
+        output = math.sqrt(float(input1))
         print(pyfiglet.figlet_format("The sqrt of " + str(input1) + " is " + str(output)))
 
     if mathop == "/":
