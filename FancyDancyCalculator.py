@@ -1,9 +1,8 @@
 from time import sleep
 import math
+from turtle import color
 import pyfiglet
-from colorama import Fore, Back, Back, Style
-from colorama import init
-from termcolor import colored
+import os
 
 
 input1 = 0
@@ -12,8 +11,10 @@ mathop = ""
 wholeinput = ""
 parsedinput = ""
 output = 0
+inputsColor = "RED"
+outputColor = "GREEN"
 
-init()
+os.system('cls' if os.name == "nt" else 'clear')
 
 print('''
 ,--.   ,--.         ,--.                                         ,--.
@@ -84,9 +85,11 @@ while True:
     def exp(input1, input2):
         print("exping")
         output = math.pow(float(input1), float(input2))
-        pyfiglet.print_figlet(input1, colors="RED")
-        print(" to the power of " +
-              str(input2) + " is " + str(output))
+        pyfiglet.print_figlet(input1, colors=inputsColor)
+        print(pyfiglet.figlet_format(" to the power of "), end="")
+        pyfiglet.print_figlet(input2, colors=inputsColor)
+        print(pyfiglet.figlet_format(" is "), end="")
+        pyfiglet.print_figlet(str(output), colors=outputColor)
 
     def squarert(input1):
         print("sqrting")
