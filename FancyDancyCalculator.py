@@ -1,6 +1,9 @@
 from time import sleep
 import math
 import pyfiglet
+from colorama import Fore, Back, Back, Style
+from colorama import init
+from termcolor import colored
 
 
 input1 = 0
@@ -9,6 +12,8 @@ mathop = ""
 wholeinput = ""
 parsedinput = ""
 output = 0
+
+init()
 
 print('''
 ,--.   ,--.         ,--.                                         ,--.
@@ -79,8 +84,9 @@ while True:
     def exp(input1, input2):
         print("exping")
         output = math.pow(float(input1), float(input2))
-        print(pyfiglet.figlet_format(str(input1) +
-              " to the power of " + str(input2) + " is " + str(output)))
+        pyfiglet.print_figlet(input1, colors="RED")
+        print(" to the power of " +
+              str(input2) + " is " + str(output))
 
     def squarert(input1):
         print("sqrting")
