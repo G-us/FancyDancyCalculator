@@ -111,7 +111,7 @@ while True:
         subtract(input1, input2)
 
     elif mathop == "*":
-        print("multiply selected")
+        print("multiply selected, test")
         multiply(input1, input2)
 
     elif mathop == "sqrt":
